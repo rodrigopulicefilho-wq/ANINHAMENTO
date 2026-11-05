@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de eleição</title>
+
+
+
+</head>
+<body>
+    <h1>"Digite sua idade por favor:"</h1>
+<input type="text" id="idade">
+<button onclick="votar()">ok</button>
+
+<script>
+    function votar(){
+        let idade = document.getElementById("idade").value
+        parseInt;
+
+        if(idade<16){
+            alert("Você não pode votar ainda!!");
+
+        }
+        else{
+            if(idade<18){
+                alert("Você pode votar, mas seu voto é facultativo!");
+
+            }
+            else{
+                if(idade>=65){
+                    alert("Você pode votar, mas seu voto é facultativo!")
+                }
+                else{
+                alert("Seu voto é obrigatório!");
+                }
+               
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
